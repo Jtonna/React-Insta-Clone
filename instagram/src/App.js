@@ -12,7 +12,7 @@ class App extends React.Component{
     // super is used to call functions on an objects parent
     this.state = {
       // setting the state of the data allows it to be used with props
-      postsBanana : dummyData
+      postsBanana: dummyData
       };
   }
 

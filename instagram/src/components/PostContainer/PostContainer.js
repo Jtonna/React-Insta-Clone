@@ -5,11 +5,11 @@ import PostGenerator from './PostGenerator.js';
 import './PostContainer.css'
 
 let PostContainer = props => {
+	console.log('post container', props.postsBanana)
 	return(
 		<div className='posts-container'>
-			{props.postsBanana.map(p => <PostGenerator key={p.imageUrl} post={p} />)}
+			{props.postsBanana.map(props => <PostGenerator key={props.imageUrl} post={props} />)}
 			{/* Maps over the data in the array and sends information to Post. */}
-			{console.log(props.postsBanana)}
 		</div>
 	)
 }
