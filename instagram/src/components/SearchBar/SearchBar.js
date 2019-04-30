@@ -1,6 +1,13 @@
 import React from 'react';
 import './searchbar.css'
-import Logo from '../../logo.svg';
+
+//logo imports
+
+import Logo from '../../img/Instagram-Camera.svg';
+import MagnifyingGlassLogo from '../../img/musica-searcher.svg';
+import TimelineLogo from '../../img/timeline.svg';
+import HeartLogo from '../../img/heart.svg'
+import UserLogo from '../../img/user.svg'
 
 
 const SearchBar = () => {
@@ -13,10 +20,10 @@ const SearchBar = () => {
 		  <input type='text' placeholder='Search' className='search-text-box' />
 		</div>
 		<div className='tools-container'>
-		   {/* add compass, heart & user vector's */}
-		  <p>C</p>
-		  <p>H</p>
-		  <p>P</p>
+			 {/* add compass, heart & user vector's */}
+			 <img alt='Timeline' src={TimelineLogo} />
+			 <img alt='' src={HeartLogo} />
+			 <img alt='' src={UserLogo} />
 	  </div>
 	</div>
 	);

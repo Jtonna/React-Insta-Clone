@@ -3,7 +3,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 import './App.css';
 
-import data from './dummy-data';
+import dummyData from './dummy-data';
 
 class App extends React.Component{
   constructor(){
@@ -12,7 +12,7 @@ class App extends React.Component{
     // super is used to call functions on an objects parent
     this.state = {
       // setting the state of the data allows it to be used with props
-      dataBanana : data
+      postsBanana : dummyData
       };
   }
 
@@ -20,7 +20,7 @@ class App extends React.Component{
     return(
       <div className="App">
       <SearchBar />
-      <PostContainer dataBanana={this.state.post} />
+      <PostContainer postsBanana={this.state.postsBanana} />
       </div>
     )
   }
