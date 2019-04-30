@@ -3,14 +3,27 @@ import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    App.js lives here
-    <SearchBar />
-    <PostContainer />
-    </div>
-  );
+import data from './dummy-data';
+
+class App extends React.Component{
+  constructor(){
+  // why is this needed?
+    super();
+    // super is used to call functions on an objects parent
+    this.state = {
+      // setting the state of the data allows it to be used with props
+      dataBanana : data
+      };
+  }
+
+  render() {
+    return(
+      <div className="App">
+      <SearchBar />
+      <PostContainer dataBanana={this.state.post} />
+      </div>
+    )
+  }
 }
 
 export default App;
