@@ -6,8 +6,9 @@ const CommentGenerator = props => {
 
 	return(
 		<div className='comment-container'>
-			<p className='comment-by'>{props.comment.username}</p>
-			<p className='comment-text'>{props.comment.text}</p>
+			<span className='comment-by'>{props.comment.username}:</span>
+			<span> {' '} </span>
+			<span className='comment-text'>{props.comment.text}</span>
 		</div>
 	);
 };

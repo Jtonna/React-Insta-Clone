@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import CommentsSectionContainer from '../CommentsSection/CommentsSectionContainer';
 
 import './PostGenerator.css';
@@ -17,8 +18,8 @@ const PostGenerator = props => {
 				<img alt='some image' src={props.post.imageUrl} />
 			</div>
 			<CommentsSectionContainer commentBanana={props.post.comments} />
+			<hr/>
 		</div>
-
 	)
 }
 
