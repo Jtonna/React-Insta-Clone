@@ -1,10 +1,10 @@
 import React from 'react';
-import CommentSection from '../CommentsSection/CommentsSections.js';
+import CommentsSectionContainer from '../CommentsSection/CommentsSectionContainer';
 
 import './PostGenerator.css';
 
 const PostGenerator = props => {
-	console.log('post gen', props)
+	console.log('post gen', props.post.comments)
 	
 	return(
 		<div className='post'>
@@ -16,7 +16,7 @@ const PostGenerator = props => {
 			<div className='image-container'>
 				<img alt='some image' src={props.post.imageUrl} />
 			</div>
-			<CommentSection commentBanana={props.post.commentsBanana} />
+			<CommentsSectionContainer commentBanana={props.post.comments} />
 		</div>
 
 	)

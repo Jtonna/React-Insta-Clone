@@ -2,7 +2,7 @@ import React from 'react';
 import PostGenerator from './PostGenerator.js';
 
 
-import './PostContainer.css'
+import './postcontainer.css'
 
 let PostContainer = props => {
 	console.log('post container', props.postsBanana)
