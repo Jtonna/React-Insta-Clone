@@ -1,5 +1,4 @@
 import React from 'react';
-import propTypes from 'prop-types';
 import CommentsSectionContainer from '../CommentsSection/CommentsSectionContainer';
 
 import './PostGenerator.css';

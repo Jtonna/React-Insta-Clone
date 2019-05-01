@@ -1,5 +1,5 @@
 import React from 'react';
-import PostGenerator from './PostGenerator.js';
+import PostGenerator from './PostGenerator';
 
 
 import './postcontainer.css'
