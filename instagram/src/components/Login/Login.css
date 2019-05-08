@@ -1,0 +1,19 @@
+html{
+  background-color: rgb(240, 240, 240);
+}
+.ig-logo{
+  width: 40%;
+}
+.login-form {
+  width: 500px;
+  border-radius: 0.2rem;
+  border: 1px solid darkgrey;
+  margin: 10px auto;
+  padding: 10px 25px;
+}
+input{
+  width: 99.1%;
+}
+button {
+  width: 100%;
+}

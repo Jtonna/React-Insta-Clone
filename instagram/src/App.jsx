@@ -1,33 +1,20 @@
-import React from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
-import './App.css';
+import React, { Component } from 'react';
+import PostsPage from './components/PostsContainer/PostsPage';
+import Authenticate from './components/Authentication/Authenticate';
 
-import dummyData from './dummy-data';
-
-class App extends React.Component{
-  constructor(){
-  // why is this needed?
+class App extends Component {
+  constructor() {
     super();
-    // super is used to call functions on an objects parent
-    this.state = {
-      // setting the state of the data allows it to be used with props
-      postsBanana: []
-      };
-  }
-
-  componentDidMount(){
-    this.setState({ postsBanana: dummyData })
+    this.state = {};
   }
 
   render() {
-    return(
+    return (
       <div className="App">
-      <SearchBar />
-      <PostContainer postsBanana={this.state.postsBanana} />
+        <PostsPage />
       </div>
-    )
+    );
   }
 }
 
-export default App;
+export default Authenticate(App);
