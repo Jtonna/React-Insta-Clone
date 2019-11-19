@@ -1,3 +1,12 @@
 .search-bar{
 	background: #D1DEDE;
+	display: flex;
+}
+
+.search-bar img{
+	height: 1.4rem;
+}
+
+.tools-container{
+	display: flex;
 }
